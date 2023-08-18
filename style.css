@@ -3,6 +3,19 @@ body {
   background-color: #f4f6f9;
   margin: 0;
   padding: 0;
+  animation: animacaoFundo 30s linear infinite;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes animacaoFundo {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 .container {
@@ -71,6 +84,28 @@ h1 {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.botoes {
+  text-align: center; /* Center-align the buttons */
+  margin-top: 20px; /* Add some space between the introduction and buttons */
+}
+
+.botao {
+  display: inline-block;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background-color: #2980b9;
+}
+
 h2 {
   color: #555; /* Cor do título dos dias */
   margin-top: 0;
@@ -113,4 +148,3 @@ li {
   opacity: 1;
   transform: translateY(0);
 }
-
